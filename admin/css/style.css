@@ -1,0 +1,245 @@
+/* Admin Panel CSS Document */
+/*By Samannoy Chatterjee*/
+/*www.samannoychatterjee.net*/
+/*Dated : 17072012*/
+/*Type : Inner Pages*/
+
+body{
+background-color:#D2CAC8;
+font-family:Tahoma, Geneva, sans-serif;
+}
+
+a{
+color:#FFFFFF;
+text-decoration:none;
+}
+
+a:hover{
+color:#000000;
+text-decoration:none;
+}
+
+.MainTable{
+margin:2px 2px 2px 2px;
+}
+
+.HeaderTable{
+background:#666666;	
+border:medium solid #999999;
+}
+
+.PageHeading{	
+background:#666666;
+color:#FFFFFF;
+font-weight:bold;
+vertical-align:top;
+padding-left:5px;
+}
+
+.AdminLogo, .AdminLogo img{
+vertical-align:top;
+width:197px;
+}
+
+.HeaderMenu{
+vertical-align:top;
+color:#FFFFFF;
+font-weight:bold;
+font-size:12px;
+margin:2px 2px 2px 2px;
+float:right;
+}
+
+.leftpanel{
+border: solid;
+border-color:#999999;
+background:#ECE7E6;
+width:20%;
+vertical-align:top;
+}
+
+.LeftMenu .Menu{
+background :url(../images/arrow_right_blue_round.png) no-repeat;
+padding-left:20px;
+}
+
+.LeftMenu .Menu a{
+color:#000;
+font-size:13px;
+font-weight:bold;
+}
+
+.LeftMenu .Menu a:hover{
+color:#666;
+}
+
+.SubMenu ul{
+	padding:2px 0 0 20px ;
+}
+
+.LeftMenu .Menu .SubMenu ul li{
+	list-style:url(../images/icon_forward_arrow.gif);
+	font-size:11px;
+}
+
+
+.LeftMenu .Menu .SubMenu a{
+color:#000;
+font-size:12px;
+font-weight:bold;
+}
+
+.LeftMenu .Menu .SubMenu a:hover{
+color:#666;
+}
+
+.rightpanel{
+border: solid;
+border-color:#999999;
+background:#ECE7E6;
+width:80%;
+vertical-align:top;
+}
+
+.Footer{
+background:#666666;
+vertical-align:top;
+color:#FFFFFF;
+font-weight:bold;
+font-size:14px;
+margin:2px 2px 2px 2px;
+border:medium solid #999999;
+}
+
+.formstyle1{
+background-color:#CCC;
+border-color:#000;
+border:solid 2px;
+}
+
+.formlabel{
+padding-left:5px;
+font-size:13px;
+color:#000000;
+/*width:25%;*/
+width:17%;
+text-align:left;
+}
+
+.separter{
+color:#666;
+font-size:13px;
+font-weight:bold;
+width:5%;
+text-align:center;
+}
+
+.forminput{
+width:80%;
+text-align:left;
+font-size:12px;
+}
+
+.forminputboxbg{
+background-image:url(../images/textbox-bg1.png);
+background-repeat:no-repeat;
+margin:0;
+width:210px;
+height:21px;
+
+}
+.formtextbox{
+background:none;
+border:none;
+width:194px;
+height:17px;
+margin:0 0 5px 0;
+padding: 2px 7px 0px 7px;
+font:10px;
+font-weight:bold;
+}
+
+label.errorfield{
+float:left;
+font-size:12px;
+color:#F00;
+padding-left:21px;
+}
+
+
+.submitbtn{
+color: #FFF;
+background-color: #900;
+font-weight: bold;
+font-size:14px;
+}
+.btnposition{
+padding-left:30px;
+}
+
+.msgposition{
+padding-left:101px;
+}
+
+.errormsg{
+font-size:12px;
+font-weight:bold;
+color:#F00;
+}
+
+.successmsg{
+font-size:12px;
+font-weight:bold;
+color:#060;	
+}
+.selectbox1{
+float:left;
+width:213px;
+}
+.listHeading{
+font-weight:bold;
+/*background:#ECE7E6;*/
+color:#000;
+font-size:14px;
+}
+
+.listData{
+font-size:14px;
+color:#000;
+}
+
+.trOdd{
+background-color:#999;
+}
+.trEven{
+background-color:#ECE7E6;	
+}
+.icon1{
+width:16px;
+height:16px;
+}
+.labelvalue{
+font-size:14px;
+font-weight:bold;
+color:#333;
+margin:0 0 5px;
+padding:2px 7px 0;
+}
+.labelvalue1{
+font-size:14px;
+color:#333;
+margin:0 0 5px;
+padding:2px 7px 0;
+}
+.deleteAll{
+font-size:14px;
+}
+
+.compulsory{
+color:#F00;
+font-weight:bold;	
+}
+
+.cliniclisting {font-size: 14px;}
+
+.specificationlisting {font-size: 14px; padding-left:5px;}

@@ -1,0 +1,25 @@
+<?php
+require("../includes/connection.php");
+$adminCreateUser=new AdminCreateUser;
+//$globalUtil->printArray($_POST);
+$formdata=array('fullname'=>$_POST['fullname'],'username'=>$_POST['username'],'email'=>$_POST['email'],'password'=>$_POST['password'],'privilege'=>$_POST['privilege']);
+$validData=$adminCreateUser->validateData($globalUtil,$formdata);
+if(!$validData['errors']){
+		$newUserCreated=$adminCreateUser->createNewUser($globalUtil,$formdata);
+		if($newUserCreated){
+		$adminUtil->unsetPostFormDataAll();	
+		$msgInfo->setMessage("createadminusermsg",SUCCESS_MSG_NEW_ADMIN_USER_CREATED,"successmsg");
+		$msgInfo->saveMessage();
+		}
+		else{
+		$msgInfo->setMessage("createadminusermsg",ERROR_MSG_NEW_ADMIN_USER_CREATED,"errormsg");
+		$msgInfo->saveMessage();		
+		}
+}
+else{
+		$adminUtil->setPostFormData($_POST);
+		$msgInfo->setMessage("createadminusermsg",$validData['errormsgs'],"errormsg");
+		$msgInfo->saveMessage();
+	}
+$globalUtil->redirectUrl($globalUtil->generateUrl(ADMIN_SITE_URL."CreateAdminUser.php"));	
+?>

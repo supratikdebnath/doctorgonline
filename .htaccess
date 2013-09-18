@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteCond %{QUERY_STRING} ^(.*)$
+Options +FollowSymLinks
+
+RewriteRule ^Doctor/([^/]*)/([^/]*)$ DoctorDetails.php?did=$1
+RewriteRule ^Hospital/([^/]*)/([^/]*)$ HospitalDetails.php?hid=$1
+RewriteRule ^Pathology/([^/]*)/([^/]*)$ PathologyDetails.php?pid=$1
+
+# For Local
+#RewriteRule (.*)/$ $1.php   
+# For Live
+RewriteRule (.*)/$/ $1.php 

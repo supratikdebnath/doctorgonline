@@ -1,0 +1,4 @@
+<table width="100%" cellpadding="0" cellspacing="0" id="HeaderTable" class="HeaderTable">
+				<td class="AdminLogo"><a href="#"><img src="<?php echo ADMIN_IMAGES_URL;?>logo.png" border="0" /></a></td>
+				<td class="HeaderMenu"><?php echo $globalUtil->dateFromTime(time(),"dS M Y, H:i:s A");?> | Welcome <?php echo $adminUtil->getAdminName($globalUtil,$_SESSION['adminUserSession']['uid']);?>! | Last Login : <?php echo $adminUtil->adminLastLogin($globalUtil,$_SESSION['adminUserSession']['uid'],$_SESSION['adminUserSession']['sessionId']);?> | <a href="<?php echo $globalUtil->generateUrl(ADMIN_SITE_URL."home.php");?>">Home</a> &nbsp; <a href="<?php echo $globalUtil->generateUrl(ADMIN_SITE_URL.CONTROLLER_FOLDER.CONTROLLER_AdminLogout);?>">Logout</a></td>
+			</table>

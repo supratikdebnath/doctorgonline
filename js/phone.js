@@ -1,0 +1,2 @@
+function isNumberKey(evt){var charCode = (evt.which) ? evt.which : event.keyCode   
+if (charCode >= 48 && charCode <= 57 || charCode == 40 || charCode == 41 || charCode == 43 || charCode == 8 || charCode == 45)	return true;return false; }

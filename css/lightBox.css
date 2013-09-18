@@ -1,0 +1,151 @@
+/*Lightbox CSS*/
+#lightbox {
+position:absolute;
+top:400px;
+left:260px;
+z-index:1000;
+display:block;
+}
+#lightbox-panel {
+display:block;
+position:absolute;
+top:-200px;
+left:140px;
+width:250px;
+background:url(../images/lightbx-bg.jpg) repeat-x 0 0 #fff;
+padding:10px;
+border:1px solid #c1d2e6;
+z-index:1001;
+border-radius:5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+
+}
+
+.login_text{
+	float:left;
+	padding:0 0 10px 10px;
+}
+
+.login_text p{
+width:100%;
+float:left;
+font:normal 12px/14px Tahoma, Geneva, sans-serif;
+color:#667379;
+padding-bottom:5px;
+}
+
+ .log_inBar{
+width:400px;
+float:left;
+margin-bottom:10px;
+padding-bottom:5px;
+background:url(../images/border-bg.gif) repeat-x 0 bottom;
+}
+ label.light{
+width:120px;
+float:left;
+font:normal 14px/17px Tahoma, Geneva, sans-serif;
+color:#2e414a;
+padding-top:3px;
+}
+ label.light span{
+	 display:block;
+	 color:#667379;
+}
+.lightboxForm{
+padding:0 0 0 10px;
+float:left;
+
+}
+.lightinput1{
+width:240px;
+height:25px;
+font:normal 12px/15px Arial, Helvetica, sans-serif;
+color:#525353;
+background-color:#FFF;
+border-top:1px solid #667180;
+border-bottom:1px solid #e1e2e4;
+border-left:1px solid #667180;
+border-right:1px solid #b3b8bc;
+margin-bottom:20px;
+float:left;
+padding:2px;
+}
+
+.lightinput2{
+width:240px;
+height:60px;
+font:normal 12px/15px Arial, Helvetica, sans-serif;
+color:#525353;
+background-color:#FFF;
+border-top:1px solid #667180;
+border-bottom:1px solid #e1e2e4;
+border-left:1px solid #667180;
+border-right:1px solid #b3b8bc;
+margin-bottom:20px;
+float:left;
+padding:2px;
+resize:none;
+}
+
+
+.key{
+width:370px;
+padding:2px 0 8px 20px;
+}
+
+.key img{
+	width:auto;
+	float:left;
+	margin-right:10px;
+}
+
+.key p{
+padding:15px 0 0 0;
+font:normal 20px/22px Tahoma, Geneva, sans-serif;
+color:#009361;
+}
+
+#lightbox-panel2 {
+position:absolute;
+top:0;
+left:380px;
+z-index:1001;
+display:block;
+}
+.cross{
+background:url(../images/close.png) no-repeat 0 0;
+width:18px;
+height:19px;
+border:0;
+cursor:pointer;
+position:absolute;
+right:-55px;
+top:-200px;
+left:15px;
+}
+ .light-bt{
+width:89px;
+height:31px;
+font:bold 14px/14px Arial, Helvetica, sans-serif;
+color:#486f7d;
+border:0;
+background: url(../images/light-bt.jpg) no-repeat right 0;
+text-align:center;
+cursor:pointer;
+float:right;
+}
+
+ label.light2{
+width:auto;
+font:normal 14px/17px Tahoma, Geneva, sans-serif;
+color:#2e414a;
+padding-top:3px;
+}
+.lightchk{
+	width:13px;
+	height:13px;
+	float:left;
+	margin:2px 8px 8px 0;
+}

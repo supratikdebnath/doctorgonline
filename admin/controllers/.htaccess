@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{QUERY_STRING} ^(.*)$
+# For Local
+#RewriteRule (.*)/$ $1.php   
+# For Live
+RewriteRule (.*)/$/ $1.php 

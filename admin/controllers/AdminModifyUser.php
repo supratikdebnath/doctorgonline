@@ -1,0 +1,26 @@
+<?php
+require("../includes/connection.php");
+$adminModifyUser=new AdminModifyUser;
+//$globalUtil->printArray($_POST);
+$formdata=array('id'=>$_POST['id'],'fullname'=>$_POST['fullname'],'password'=>$_POST['password'],'email'=>$_POST['email'],'privilege'=>$_POST['privilege'],"status"=>$_POST['status']);
+$validData=$adminModifyUser->validateData($globalUtil,$formdata);
+if(!$validData['errors']){
+		$UserUpdated=$adminModifyUser->updateUser($globalUtil,$formdata);
+		if($UserUpdated){
+		$adminUtil->unsetPostFormDataAll();	
+		$msgInfo->setMessage("updateadminusermsg",SUCCESS_MSG_UPDATE_ADMIN_USER,"successmsg");
+		$msgInfo->saveMessage();
+		}
+		else{
+		$adminUtil->unsetPostFormDataAll();	
+		$msgInfo->setMessage("updateadminusermsg",ERROR_MSG_UPDATE_ADMIN_USER_CREATED,"errormsg");
+		$msgInfo->saveMessage();		
+		}
+}
+else{
+		//$adminUtil->setPostFormData($_POST);
+		$msgInfo->setMessage("updateadminusermsg",$validData['errormsgs'],"errormsg");
+		$msgInfo->saveMessage();
+	}
+$globalUtil->redirectUrl($globalUtil->getHttpRefererPage());	
+?>

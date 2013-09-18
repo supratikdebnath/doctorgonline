@@ -1,0 +1,22 @@
+<?php
+require("../includes/connection.php");
+$adminChangeEmail=new AdminChangeEmail;
+//$globalUtil->printArray($_POST);
+$formdata=array('email'=>$_POST['emailaddress']);
+if($globalUtil->checkMail($formdata['email'])){
+$changeEmail=$adminChangeEmail->changeEmail($globalUtil,$formdata);
+if($changeEmail){
+		$msgInfo->setMessage("changeemailmsg",SUCCESS_MSG_CHANGE_EMAIL,"successmsg");
+		$msgInfo->saveMessage();
+}
+else{
+		$msgInfo->setMessage("changeemailmsg",ERROR_MSG_CHANGE_EMAIL,"errormsg");
+		$msgInfo->saveMessage();
+	}
+}
+else{
+		$msgInfo->setMessage("changeemailmsg",ERROR_MSG_CHANGE_EMAIL_INVALID,"errormsg");
+		$msgInfo->saveMessage();
+}	
+$globalUtil->redirectUrl($globalUtil->generateUrl(ADMIN_SITE_URL."ChangeEmail.php"));	
+?>

@@ -1,0 +1,82 @@
+/* Admin Panel CSS Document */
+/*By Samannoy Chatterjee*/
+/*www.samannoychatterjee.net*/
+/*Dated : 17072012*/
+/*Type : Index Pages*/
+
+body{
+background:#eae4de;
+font-family:"Georgia", Times New Roman, Times, serif;
+}
+.adminlogin{
+background-image:url(../images/admin-login.png);
+background-repeat:no-repeat;
+background-position:center; 
+width:515px;	
+height:400px;
+}
+
+.loginform{
+margin:250px 0 68px 124px;
+}
+
+.textboxbg{
+background-image:url(../images/textbox-bg.png);
+background-repeat:no-repeat;
+margin:0;
+width:120px;
+height:24px;
+}
+
+.textbox{
+background:none;
+border:none;
+width:116px;
+height:12px;
+margin:0 0 5px 0;
+padding: 2px 7px 0px 7px;
+font:10px;
+font-weight:bold;
+}
+
+.formheading{
+color:#FFF;
+font-weight:bold;
+height:15px;
+font-size:12px;
+}
+
+.loginbtwns{
+margin-left:110px;
+}
+
+input.errorfield{
+border:1px solid #FF0000;
+width:101px;
+font-size:12px;
+margin-left:5px;
+height:13px;
+}
+
+label.errorfield{
+color:#F00;
+font-size:12px;
+margin-left:6px;
+}
+
+.submitbtn {
+background-color: #E9151D;
+border: 1px solid #BA080F;
+color: #FFFFFF;
+cursor: pointer;
+font: bold 10px/12px Verdana,Arial,Helvetica,sans-serif;
+padding: 2px 3px 3px;
+}
+
+
+.footer{
+background-color:#CCC;
+font-size:12px;
+color:#000;
+font-weight:bold;
+}
